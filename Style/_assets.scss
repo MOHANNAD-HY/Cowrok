@@ -1,0 +1,137 @@
+$Humble-black: #1d1e1c;
+$Unorganic-green: #d3f585;
+$Sky-blue: #a6e8f6;
+$Shiny-pink: #fcbedc;
+$Almost-orande: #fbc899;
+$Powerless-gray: #f1f1f1;
+$Gap-112px: 112px;
+$Gap-80px: 80px;
+$Gap-64px: 64px;
+$Gap-48px: 48px;
+$Gap-46px: 46px;
+$Gap-32px: 32px;
+$Gap-24px: 24px;
+$Gap-16px: 16px;
+
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  color: $Humble-black;
+}
+
+.heading1 {
+  font-size: 96px;
+  font-weight: bold;
+  line-height: 120%;
+}
+
+.heading2 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 100%;
+  margin: 0;
+}
+
+.heading3 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 140%;
+  margin: 0;
+}
+
+.heading4 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 140%;
+}
+
+.paragraph {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 180%;
+}
+
+.strong-paragraph {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 150%;
+}
+
+.subtitle {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.white-button,
+.black-button {
+  padding: 12px 24px;
+  border-radius: 48px;
+  cursor: pointer;
+  width: fit-content;
+  text-wrap: nowrap;
+}
+.white-button {
+  border: 1px solid $Humble-black;
+}
+
+.black-button {
+  background-color: $Humble-black;
+  color: white;
+}
+.main-section {
+  padding: $Gap-112px 0;
+}
+
+.container {
+  margin: 0 $Gap-64px;
+}
+
+@media (max-width: 767px) {
+  .main-section {
+    padding: $Gap-64px 0;
+  }
+  .container {
+    margin: 0 20px;
+  }
+}
+
+@mixin flex-center-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-column-center-space-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-column-center-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-ceter-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $Humble-black;
+}
+
+p {
+  margin: 0;
+}
